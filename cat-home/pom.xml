@@ -3,7 +3,7 @@
    <parent>
       <groupId>com.dianping.cat</groupId>
       <artifactId>parent</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
    </parent>
    <modelVersion>4.0.0</modelVersion>
    <artifactId>cat-home</artifactId>
@@ -201,7 +201,7 @@
             <artifactId>maven-war-plugin</artifactId>
             <version>2.1.1</version>
             <configuration>
-               <warName>cat-${env}-${project.version}</warName>
+               <warName>${project.artifactId}</warName>
                <webResources>
                   <resource>
                      <directory>src/main/resources</directory>
